@@ -20,6 +20,7 @@ cabal-version:       >=1.10
 library
   exposed-modules:     
     Algebra.Closure.Set.DepthFirst
+    Algebra.Closure.Set.BreadthFirst
   build-depends:       base                  >= 4.6   && < 4.7
                      , hashable              >= 1.2.1 && < 1.2.2
                      , unordered-containers  >= 0.2.3 && < 0.2.4

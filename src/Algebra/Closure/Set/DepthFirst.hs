@@ -7,9 +7,9 @@
 -- Stability   : experimental
 -- Portability : non-portable
 -- 
--- Depth-first set closed sets. For a particular endomorphism @p :: a
--- -> a@ a 'Closed' set is a set where if some element @x@ is in the
--- set then so is @p x@.
+-- Depth-first closed sets. For a particular endomorphism @(p :: a ->
+-- a)@ a 'Closed' set is a set where if some element @x@ is in the set
+-- then so is @p x@.
 
 module Algebra.Closure.Set.DepthFirst (
 
@@ -30,8 +30,8 @@ import Data.Hashable
 import Data.Foldable (Foldable, foldr)
 import qualified Data.HashSet as Set
 
--- | A closed set @Closed a@, given an endomorphism @p :: a -> a@, is
--- a set where if some element @x@ is in the set then so is @p x@.
+-- | A closed set @Closed a@, given an endomorphism @(p :: a -> a)@,
+-- is a set where if some element @x@ is in the set then so is @p x@.
 data Closed a = Closed (HashSet a) (a -> a)
 
 -- | Access the underlying set.
