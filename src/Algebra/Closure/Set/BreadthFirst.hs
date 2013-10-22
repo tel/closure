@@ -10,7 +10,7 @@
 -- Depth-first closed sets. For a particular endomorphism @(p :: a ->
 -- a)@ a 'Closed' set is a set where if some element @x@ is in the set
 -- then so is @p x@. Unlike "Algebra.Closure.Set.DepthFirst", this
--- algorithm computes the closure in a depth-first manner and thus can
+-- algorithm computes the closure in a breadth-first manner and thus can
 -- be useful for computing infinite closures.
 -- 
 -- It's reasonable to think of a breadth-first 'Closed' set as the
